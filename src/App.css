@@ -1,1 +1,55 @@
 
+.container-fluid {
+    padding: 0;
+    height: 100vh;
+    background-color: #FFFDD0;
+    overflow-y: scroll; /* don't show content that exceeds my height */
+}
+.menu-item {
+    color: red;
+    background-color: #FFFDD0;
+    width: 30%;
+    text-align: center;
+}
+.comment-sec {
+    background-color: bisque;
+    border-radius: 5px;
+    width: 39%;
+}
+.header-banner {
+    height: 50%;
+    background-color: crimson;
+}
+.row-header{
+    margin:0px auto;
+    padding:0px auto;
+}
+
+.row-content {
+    margin:0px auto;
+    padding: 50px 0px 50px 0px;
+    border-bottom: 1px ridge;
+    min-height:400px;
+}
+
+.footer{
+    background-color: crimson;
+    margin:0px auto;
+    padding: 5px 0px 5px 0px;
+}
+.jumbotron {
+    padding:70px 30px 70px 30px;
+    margin:0px auto;
+}
+
+address{
+    font-size:80%;
+    margin:0px;
+    color:#FFFDD0;
+}
+.footer-text {
+    color: #FFFDD0;
+}
+.link{
+    color: rgb(252, 245, 109)
+}
