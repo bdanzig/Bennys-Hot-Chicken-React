@@ -1,14 +1,55 @@
 import React, { Component } from 'react';
-import { Navbar, NavbarBrand, Jumbotron } from 'reactstrap';
+import { Navbar, NavbarBrand, Nav, NavbarToggler, Collapse, NavItem, Jumbotron } from 'reactstrap';
+import { Navlink, NavLink } from 'react-router-dom';
 import '../App.css'
 
 class Header extends Component {
+
+    constructor(props){
+        super(props);
+        this.toggleNav = this.toggleNav.bind(this);
+        this.state = {
+            isNavOpen: false
+        };
+    }
+
+    toggleNav(){
+        this.setState({
+            isNavOpen: !this.state.isNavOpen
+        });
+    }
+
     render(){
         return(
             <>
-                <Navbar style={{"background-color":"#696969"}}>
+                <Navbar expand="md" style={{"background-color":"#696969"}}>
                     <div className="container">
-                        <img src="../../assets/images/BHCText.png" width="50%"/>
+                        <NavbarToggler className="toggle" onClick={this.toggleNav} />
+                        <img src="../../assets/images/BHCText.png" alt="Benny's Hot Chicken" width="50%"/>
+                        <Collapse isOpen={this.state.isNavOpen} navbar>
+                        <Nav navbar className="ml-5">
+                            <NavItem>
+                                <NavLink className="nav-link" to="/home">
+                                    <span className="fa fa-home fa-lg"></span> Home
+                                </NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink className="nav-link" to="/aboutus">
+                                    <span className="fa fa-info fa-lg"></span> About Us
+                                </NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink className="nav-link" to="/menu">
+                                    <span className="fa fa-list fa-lg"></span> Menu
+                                </NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink className="nav-link" to="/contactus">
+                                    <span className="fa fa-address-card fa-lg"></span> Contact Us
+                                </NavLink>
+                            </NavItem>
+                        </Nav>
+                        </Collapse>
                         <img src="../../assets/images/BHCLogo.png"  width="3%"/>
                     </div>
                 </Navbar>

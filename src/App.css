@@ -51,5 +51,14 @@ address{
     color: #FFFDD0;
 }
 .link{
-    color: rgb(252, 245, 109)
+    color: rgb(252, 245, 109);
+}
+.toggle{
+    color: #FFFDD0;
+}
+.nav-link{
+    color: #FFFDD0;
+}
+.nav-link:hover{
+    color: rgb(252, 245, 109);
 }
