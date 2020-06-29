@@ -62,3 +62,9 @@ address{
 .nav-link:hover{
     color: rgb(252, 245, 109);
 }
+.main-nav{
+    background-color: rgb(182, 89, 89);
+}
+.contact-addy{
+    color: crimson;
+}

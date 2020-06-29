@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Navbar, NavbarBrand, Nav, NavbarToggler, Collapse, NavItem, Jumbotron } from 'reactstrap';
-import { Navlink, NavLink } from 'react-router-dom';
+import { Navlink, NavLink, Link } from 'react-router-dom';
 import '../App.css'
 
 class Header extends Component {
@@ -22,10 +22,10 @@ class Header extends Component {
     render(){
         return(
             <>
-                <Navbar expand="md" style={{"background-color":"#696969"}}>
+                <Navbar expand="md" className="main-nav">
                     <div className="container">
                         <NavbarToggler className="toggle" onClick={this.toggleNav} />
-                        <img src="../../assets/images/BHCText.png" alt="Benny's Hot Chicken" width="50%"/>
+                        <img href="/home" src="../../assets/images/BHCText.png" alt="Benny's Hot Chicken" width="50%"/>
                         <Collapse isOpen={this.state.isNavOpen} navbar>
                         <Nav navbar className="ml-5">
                             <NavItem>
