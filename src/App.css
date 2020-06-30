@@ -19,6 +19,7 @@
 .header-banner {
     height: 50%;
     background-color: crimson;
+    border-radius: 0px !important;
 }
 .row-header{
     margin:0px auto;
