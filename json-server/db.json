@@ -1,0 +1,331 @@
+{
+  "dishes": [
+    {
+      "id": 0,
+      "name": "Classic Chicken Sandwich",
+      "image": "images/classicSandwich.jpg",
+      "category": "mains",
+      "label": "Hot",
+      "featured": true,
+      "price": "4.99",
+      "description": "Our famous classic crispy chicken sandwich. Get one, or two, or three. We're not judging."
+    },
+    {
+      "id": 1,
+      "name": "Hot Chicken Sandwich",
+      "image": "images/hotSandwich.png",
+      "category": "appetizer",
+      "label": "",
+      "featured": false,
+      "price": "1.99",
+      "description": "For those looking to take it up a notch, try our iconic hot sandwich. Made fresh, daily."
+    },
+    {
+      "id": 2,
+      "name": "Famous Fried Chicken",
+      "image": "images/famousChicken.jpg",
+      "category": "appetizer",
+      "label": "New",
+      "featured": false,
+      "price": "1.99",
+      "description": "Try our famous fried chicken!"
+    },
+    {
+      "id": 3,
+      "name": "FreakShakes",
+      "image": "images/shakes.jpg",
+      "category": "dessert",
+      "label": "",
+      "featured": false,
+      "price": "2.99",
+      "description": "Chicken not enough? Try one of our heart-stopping shakes! Literally!"
+    }
+  ],
+  "comments": [
+    {
+      "id": 0,
+      "dishId": 0,
+      "rating": 5,
+      "comment": "This sandwich slaps. I give it a 9.",
+      "author": "Dwyane Wade",
+      "date": "2012-10-16T17:57:28.556094Z"
+    },
+    {
+      "id": 1,
+      "dishId": 0,
+      "rating": 4,
+      "comment": "Crispy Chicken, fluffly buns, you're taking me straight to flavortown, man!",
+      "author": "Guy Fieri",
+      "date": "2014-09-05T17:57:28.556094Z"
+    },
+    {
+      "id": 2,
+      "dishId": 0,
+      "rating": 3,
+      "comment": "Eat it, just eat it!",
+      "author": "Drake",
+      "date": "2015-02-13T17:57:28.556094Z"
+    },
+    {
+      "id": 3,
+      "dishId": 0,
+      "rating": 4,
+      "comment": "Uhhh this is like totally fuckin dank, yo.",
+      "author": "Kyle Roggers",
+      "date": "2013-12-02T17:57:28.556094Z"
+    },
+    {
+      "id": 4,
+      "dishId": 0,
+      "rating": 2,
+      "comment": "I almost got the classic sandwich, but I'm happy I Chang'd my mind.",
+      "author": "Señor Ben Chang",
+      "date": "2011-12-02T17:57:28.556094Z"
+    },
+    {
+      "id": 5,
+      "dishId": 1,
+      "rating": 5,
+      "comment": "Dean-licious!",
+      "author": "Dean Craig Pelton",
+      "date": "2012-10-16T17:57:28.556094Z"
+    },
+    {
+      "id": 6,
+      "dishId": 1,
+      "rating": 4,
+      "comment": "Cool cool cool. I liked it.",
+      "author": "Abed Nadir",
+      "date": "2014-09-05T17:57:28.556094Z"
+    },
+    {
+      "id": 7,
+      "dishId": 1,
+      "rating": 3,
+      "comment": "This is hot! Almost as hot as when I banged Ertha Kitt in an airplane bathroom.",
+      "author": "Pierce Hawthorne",
+      "date": "2015-02-13T17:57:28.556094Z"
+    },
+    {
+      "id": 8,
+      "dishId": 1,
+      "rating": 4,
+      "comment": "Oooh, it's nice.",
+      "author": "Shirley Bennett",
+      "date": "2013-12-02T17:57:28.556094Z"
+    },
+    {
+      "id": 9,
+      "dishId": 1,
+      "rating": 2,
+      "comment": "I don't eat meat, but if I did, this would be my favorite chicken in the world.",
+      "author": "Britta Perry",
+      "date": "2011-12-02T17:57:28.556094Z"
+    },
+    {
+      "id": 10,
+      "dishId": 2,
+      "rating": 5,
+      "comment": "This is the best chicken I ever had. Woah... I could start a chicken store! Troy and Abed making chiiicken!",
+      "author": "Troy Barnes",
+      "date": "2012-10-16T17:57:28.556094Z"
+    },
+    {
+      "id": 11,
+      "dishId": 2,
+      "rating": 4,
+      "comment": "Crisis alert! This chicken is to die for!",
+      "author": "Garrett",
+      "date": "2014-09-05T17:57:28.556094Z"
+    },
+    {
+      "id": 12,
+      "dishId": 2,
+      "rating": 3,
+      "comment": "Sooooo good!",
+      "author": "Annie Edison",
+      "date": "2015-02-13T17:57:28.556094Z"
+    },
+    {
+      "id": 13,
+      "dishId": 2,
+      "rating": 4,
+      "comment": "Pop Pop!",
+      "author": "Magnitude",
+      "date": "2013-12-02T17:57:28.556094Z"
+    },
+    {
+      "id": 14,
+      "dishId": 2,
+      "rating": 2,
+      "comment": "AGHHH- MY- HEA- HELP-",
+      "author": "Pierce Hawthorne (probably faking",
+      "date": "2011-12-02T17:57:28.556094Z"
+    },
+    {
+      "id": 15,
+      "dishId": 3,
+      "rating": 5,
+      "comment": "Now you're grubbing with the woo",
+      "author": "Pop Smoke",
+      "date": "2012-10-16T17:57:28.556094Z"
+    },
+    {
+      "id": 16,
+      "dishId": 3,
+      "rating": 4,
+      "comment": "Shut up Leonard! I saw your chicken videos!",
+      "author": "Jeff Winger",
+      "date": "2014-09-05T17:57:28.556094Z"
+    },
+    {
+      "id": 17,
+      "dishId": 3,
+      "rating": 3,
+      "comment": "This shake is streets ahead!",
+      "author": "Pierce Hawthorne",
+      "date": "2015-02-13T17:57:28.556094Z"
+    },
+    {
+      "id": 18,
+      "dishId": 3,
+      "rating": 4,
+      "comment": "She belong to the meats!",
+      "author": "Future Hendrxx",
+      "date": "2013-12-02T17:57:28.556094Z"
+    },
+    {
+      "id": 19,
+      "dishId": 3,
+      "rating": 2,
+      "comment": "Heinous",
+      "author": "Barry",
+      "date": "2011-12-02T17:57:28.556094Z"
+    },
+    {
+      "dishId": 1,
+      "rating": "5",
+      "author": "Tobias Funkhë",
+      "comment": "Just delightful! I absolutely loved the tender meat in my mouth.",
+      "date": "2020-07-09T23:01:41.383Z",
+      "id": 20
+    }
+  ],
+  "promotions": [
+    {
+      "id": 0,
+      "name": "Weekend Grand Buffet",
+      "image": "images/buffet.jpg",
+      "label": "New",
+      "price": "19.99",
+      "featured": true,
+      "description": "Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person "
+    }
+  ],
+  "leaders": [
+    {
+      "id": 0,
+      "name": "Peter Pan",
+      "image": "images/benny.png",
+      "designation": "Chief Epicurious Officer",
+      "abbr": "CEO",
+      "featured": false,
+      "description": "Our CEO, Peter, credits his hardworking East Asian immigrant parents who undertook the arduous journey to the shores of America with the intention of giving their children the best future. His mother's wizardy in the kitchen whipping up the tastiest dishes with whatever is available inexpensively at the supermarket, was his first inspiration to create the fusion cuisines for which The Frying Pan became well known. He brings his zeal for fusion cuisines to this restaurant, pioneering cross-cultural culinary connections."
+    },
+    {
+      "id": 1,
+      "name": "Dhanasekaran Witherspoon",
+      "image": "images/benny.png",
+      "designation": "Chief Food Officer",
+      "abbr": "CFO",
+      "featured": false,
+      "description": "Our CFO, Danny, as he is affectionately referred to by his colleagues, comes from a long established family tradition in farming and produce. His experiences growing up on a farm in the Australian outback gave him great appreciation for varieties of food sources. As he puts it in his own words, Everything that runs, wins, and everything that stays, pays!"
+    },
+    {
+      "id": 2,
+      "name": "Agumbe Tang",
+      "image": "images/benny.png",
+      "designation": "Chief Taste Officer",
+      "abbr": "CTO",
+      "featured": false,
+      "description": "Blessed with the most discerning gustatory sense, Agumbe, our CFO, personally ensures that every dish that we serve meets his exacting tastes. Our chefs dread the tongue lashing that ensues if their dish does not meet his exacting standards. He lives by his motto, You click only if you survive my lick."
+    },
+    {
+      "id": 3,
+      "name": "Alberto Somayya",
+      "image": "images/benny.png",
+      "designation": "Executive Chef",
+      "abbr": "EC",
+      "featured": true,
+      "description": "Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. He says, Put together the cuisines from the two craziest cultures, and you get a winning hit! Amma Mia!"
+    }
+  ],
+  "feedback": [
+    {
+      "firstname": "fdas",
+      "lastname": "afds",
+      "telnum": "134113",
+      "email": "dafdads@daffas.dfdafd",
+      "agree": true,
+      "contactType": "Email",
+      "message": "afadsfds",
+      "date": "2017-12-04T09:41:49.890Z",
+      "id": 1
+    },
+    {
+      "firstname": "Ben",
+      "lastname": "Danzig",
+      "telnum": "4157553661",
+      "email": "bdanzig@umich.edu",
+      "agree": true,
+      "contactType": "Email",
+      "message": "Test 3",
+      "date": "2020-07-12T01:20:36.940Z",
+      "id": 2
+    },
+    {
+      "firstname": "Ben",
+      "lastname": "Danzig",
+      "telnum": "4157553661",
+      "email": "bdanzig@umich.edu",
+      "agree": true,
+      "contactType": "Email",
+      "message": "tes 5",
+      "date": "2020-07-12T01:21:28.612Z",
+      "id": 3
+    },
+    {
+      "firstname": "Ben",
+      "lastname": "Danzig",
+      "telnum": "4157553661",
+      "email": "bdanzig@umich.edu",
+      "agree": true,
+      "contactType": "Tel.",
+      "message": "Test 6",
+      "date": "2020-07-12T01:22:36.089Z",
+      "id": 4
+    },
+    {
+      "firstname": "Ben",
+      "lastname": "Danzig",
+      "telnum": "4157553661",
+      "email": "bdanzig@umich.edu",
+      "agree": true,
+      "contactType": "Tel.",
+      "message": "test 7",
+      "date": "2020-07-12T01:23:36.320Z",
+      "id": 5
+    },
+    {
+      "firstname": "Ben",
+      "lastname": "Danzig",
+      "telnum": "4157553661",
+      "email": "bdanzig@umich.edu",
+      "agree": true,
+      "contactType": "Tel.",
+      "message": "test 8",
+      "date": "2020-07-12T01:24:41.184Z",
+      "id": 6
+    }
+  ]
+}

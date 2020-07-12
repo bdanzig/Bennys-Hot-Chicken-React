@@ -3,6 +3,8 @@ import { Card, CardImg, Button, CardText, CardBody, CardTitle, Row, Label, Col, 
 import { Control, LocalForm, Errors } from 'react-redux-form';
 import { Link } from 'react-router-dom';
 import { Loading } from './LoadingComponent'
+import { baseUrl } from '../shared/baseUrl';
+//import { FadeTransform, Fade, Stagger } from 'react-animation-components';
 import '../App.css'
 
 const required = (val) => val && val.length;
@@ -26,7 +28,7 @@ class CommentForm extends Component {
         })
     }
     handleSubmit(values){
-        this.props.addComment(this.props.dishId, values.rating, values.author, values.comment);
+        this.props.postComment(this.props.dishId, values.rating, values.author, values.comment);
     }
 
     render(){
@@ -101,12 +103,14 @@ class CommentForm extends Component {
     }
 }
 
-function RenderComments({comments, addComment, dishId}){
+function RenderComments({comments, postComment, dishId}) {
     if(comments != null){
         let options = { year: 'numeric', month: 'short', day: 'numeric' };
         
         const commentlist = comments.map((commentUnit) => {
+            /*<Fade in>*/
             return(
+    
                 <div className="list-unstyled">
                 <div key={commentUnit.id} className="li">
                     <p>{commentUnit.comment}</p>
@@ -114,13 +118,16 @@ function RenderComments({comments, addComment, dishId}){
 
                 </div>
                 </div>
+                
             );
         })
         return(
                 <div className=" m-1">
                     <h4>Comments</h4>
+                    {/*<Stagger in>*/}
                     {commentlist}
-                    <CommentForm dishId={dishId} addComment={addComment}/>
+                    {/*</Stagger>*/}
+                    <CommentForm dishId={dishId} postComment={postComment} />
                 </div>
         );
     }
@@ -134,15 +141,21 @@ function RenderComments({comments, addComment, dishId}){
 }
 
 function RenderDishCard({dish}){
+    /*<FadeTransform in 
+            transformProps={{
+                exitTransform: 'scale(0.5) translateY(-50%)'
+            }}>*/
     if(dish != null){
         return(
+            
+
             <Card>
-            <CardImg width="100%" src={'../' + dish.image} alt={dish.name} />
+            <CardImg width="100%" src={baseUrl + dish.image} alt={dish.name} />
             <CardBody>
                 <CardTitle><h5><b>{dish.name}</b></h5></CardTitle>
                 <CardText>{dish.description}</CardText>
             </CardBody>
-        </Card>
+            </Card>
         );
     }
     else{
@@ -190,7 +203,7 @@ const DishDetail = (props) =>{
                     </div>
                     <div className="comment-sec ml-3">
                         <RenderComments comments={props.dishComments}
-                            addComment={props.addComment}
+                            postComment={props.postComment}
                             dishId={props.dish.id} />
                     </div>
                 </div>
